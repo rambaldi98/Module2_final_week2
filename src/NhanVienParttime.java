@@ -27,7 +27,7 @@ public class NhanVienParttime extends NhanVien{
                 ", age=" + this.getAge() +
                 ", phone=" + this.getPhone() +
                 ", email='" + this.getEmail() + '\'' +
-                "hour=" + hour +
+                "hour=" + this.getHour() +
                 '}';
     }
 }

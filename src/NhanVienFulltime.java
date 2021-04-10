@@ -50,9 +50,9 @@ public  class NhanVienFulltime extends NhanVien{
                 ", age=" + this.getAge() +
                 ", phone=" + this.getPhone() +
                 ", email='" + this.getEmail() + '\'' +
-                "tienThuong=" + tienThuong +
-                ", tienPhat=" + tienPhat +
-                ", luongCung=" + luongCung +
+                "tienThuong=" + this.getTienThuong() +
+                ", tienPhat=" + this.getTienPhat() +
+                ", luongCung=" + this.getLuongCung() +
                 '}';
     }
 }

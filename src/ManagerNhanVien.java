@@ -45,12 +45,14 @@ public class ManagerNhanVien {
             }
         }
 
-
         return nhanViens1;
     }
     public void showTrungBinh(){
-        List newarray = listTrungBinh();
-        for (Object nhanvien :newarray) {
+//        List newarray = listTrungBinh();
+//        for (Object nhanvien :newarray) {
+//            System.out.println(nhanvien);
+//        }
+        for(Object nhanvien : listTrungBinh()){
             System.out.println(nhanvien);
         }
     }

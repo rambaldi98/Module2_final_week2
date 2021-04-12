@@ -11,16 +11,26 @@ public class ManagerNhanVien {
         this.nhanViens.add(nhanVien);
     }
 
-    public boolean deleteNhanVien(String id){
-        NhanVien search = this.nhanViens.stream()
-                .filter(nhanVien -> nhanVien.getMaNhanVien().equals(id))
-                .findFirst().orElse(null);
-
-        if(search == null)
-            return false;
-        this.nhanViens.remove(search);
-        return true;
+    public boolean deleteNhanVien(String id) {
+//        NhanVien search = this.nhanViens.stream()
+//                .filter(nhanVien -> nhanVien.getMaNhanVien().equals(id))
+//                .findFirst().orElse(null);
+        //        if(search == null)
+//            return false;
+//        this.nhanViens.remove(search);
+//        return true;
+//    }
+        for (NhanVien search : nhanViens) {
+            if (search.getMaNhanVien().equals(id)) {
+                this.nhanViens.remove(search);
+                return true;
+            }
+        }
+        return false;
     }
+
+
+
 
     public void showNhanVien(){
         for (NhanVien nhanVien : this.nhanViens) {
@@ -72,3 +82,4 @@ public class ManagerNhanVien {
 
 
 }
+

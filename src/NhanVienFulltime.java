@@ -1,4 +1,4 @@
-public  class NhanVienFulltime extends NhanVien{
+public   class  NhanVienFulltime extends NhanVien{
     private double tienThuong;
     private double tienPhat;
     private double luongCung;
@@ -33,12 +33,14 @@ public  class NhanVienFulltime extends NhanVien{
     public void setLuongCung(double luongCung) {
         this.luongCung = luongCung;
     }
+    public void messs(){
+        System.out.println("hello");
+    }
 
     @Override
     public double getLuong() {
         return (getLuongCung()+ getTienThuong() - getTienPhat());
     }
-
 
 
 

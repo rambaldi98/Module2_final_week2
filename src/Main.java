@@ -8,6 +8,7 @@ public class Main {
 
         NhanVien b = new NhanVienParttime("abcde","ten so 3",18,2225,"doiencong",2);
         NhanVien b2 = new NhanVienParttime("abcdf","ten so 4",18,2225,"doiencong",2);
+
         mana.addNhanVien(a);
         mana.addNhanVien(a2);
         mana.addNhanVien(b);
@@ -25,8 +26,6 @@ public class Main {
         mana.deleteNhanVien("abc");
         System.out.println("sau khi xoa");
         mana.showNhanVien();
-
-
 
     }
 }
